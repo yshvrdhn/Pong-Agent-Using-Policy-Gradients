@@ -1,5 +1,5 @@
 # Pong AI using Policy Gradient
-
+#### Contributors : Anhad Mohananey , Yashovardhan Chaturvedi
 ### Description
 
 The code in this repository will let you train a Convolutional Neural Network(CNN) to use OpenAI gym to play Pong solely using input frames of the game. The CNN is written in [Keras](https://github.com/fchollet/keras).

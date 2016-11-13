@@ -62,18 +62,6 @@ def choose_action_up_OR_down(probability):
          # signifies down in pong implmentation of open ai gym
         return 3
 
-def compute_gradient(gradient_log_p, hidden_layer_values, observation_values, weights):
-    """ See here: http://neuralnetworksanddeeplearning.com/chap2.html"""
-    delta_L = gradient_log_p
-    dC_dw2 = np.dot(hidden_layer_values.T, delta_L).ravel()
-    delta_l2 = np.outer(delta_L, weights['2'])
-    delta_l2 = relu(delta_l2)
-    dC_dw1 = np.dot(delta_l2.T, observation_values)
-    return {
-        '1': dC_dw1,
-        '2': dC_dw2
-    }
-
 def update_weights(weights, expectation_g_squared, g_dict, decay_rate, learning_rate):
     """ See here: http://sebastianruder.com/optimizing-gradient-descent/index.html#rmsprop"""
     epsilon = 1e-5

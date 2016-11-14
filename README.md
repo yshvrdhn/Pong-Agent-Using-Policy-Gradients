@@ -1,4 +1,4 @@
-# Pong AI using Policy Gradient
+# Pong Agent using Policy Gradient
 #### Contributors : Anhad Mohananey , Yashovardhan Chaturvedi
 ### Description
 
